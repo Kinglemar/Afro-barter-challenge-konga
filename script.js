@@ -1,20 +1,40 @@
 
-const pinkRing = document.querySelector(".delivery-input")
+const PINKRING = document.querySelector(".drip textarea")
 
-console.log(pinkRing)
+console.log(PINKRING)
 
-
-
-function defaultBorder(){
-    pinkRing.style.border = "#ccc 1px solid"
-}
 
 function newBorder(){
-    pinkRing.style.border = "1px solid #ed017f"
-    pinkRing.style.outline = "none;"
+    PINKRING.style.border = "1px solid #ed017f"
+    PINKRING.style.outline = "none"
 }
 
-pinkRing.addEventListener("focus", newBorder, false)
-// pinkRing.addEventListener("focus-out", defaultBorder, false)
+function defaultBorder(){
+    PINKRING.style.border = "1px solid #ccc"
+    PINKRING.style.outline = "none"
+}
 
-const tick = document.querySelector(".drip")
+
+
+PINKRING.addEventListener("focus", newBorder, false)
+PINKRING.addEventListener("focus-out", defaultBorder, false)
+
+// ********************************************************************
+
+const starter = document.querySelector(".check input")
+const checkBox = document.querySelector(".none")
+const collapse = document.querySelector(".drip")
+
+checkBox.classList.remove("hidden")
+collapse.classList.add("hidden")
+
+function click(){
+    checkBox.classList.toggle("hidden")
+    collapse.classList.toggle("hidden")
+}
+
+starter.addEventListener("click", click, false)
+starter.addEventListener("click", click, false)
+
+// *************************************************************************
+
