@@ -1,0 +1,372 @@
+body{
+    font-family: Helvetica Neue,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,sans-serif;
+    padding: 0%;
+    margin: 0%;
+    background: #f5f5f5;
+}
+
+h1,h2,h3,h4,p,button{
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    padding: 20px 35px 40px;
+    max-width: 1220px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+header img{
+    margin-right: 350px;
+}
+
+header h1{
+    font-size: 25px;
+    margin: 16px;
+}
+
+/* *************************************************************************************************************** */
+
+.page{
+    max-width: 1210px;
+    padding: 10px 35px;
+    margin: 0 auto;
+    display: flex;
+}
+.first-half{
+    width: 840px;
+}
+.second-half{
+    width: 440px;
+    height: 556px;
+    margin-left: 25px;
+    background: #fff;
+    border-radius: 7px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 20px;
+}
+.upper{
+    background-color: #fff;
+    border-radius: 7px;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+}
+.title{
+    border-bottom: 1px solid #e8e8e8;
+    padding: 15px 20px;
+    font-weight: 600;
+}
+
+.hidden{
+    display: none;
+}
+.rectangle{
+    /* height: 162px; */
+    width: 384px;
+    border: 1px solid #e8e8e8;
+    border-radius: 4px;
+    margin: 15px 20px;
+    font-size: 12px;
+}
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    border-bottom: 1px solid #e8e8e8;
+    font-weight: 600;
+    color: #9a0052;
+}
+
+.flex a{
+    padding: 6px;
+    border: 1px solid #ed017f;
+    color: #f84ca2;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 3px;
+}
+.check{
+    margin-bottom: 15px;
+}
+
+.check label{
+    font-size: 13px;
+    margin-left: 10px;
+}
+
+.check input{
+    margin-left: 18px;
+}
+
+.check input:focus{
+    background-color: #f84ca2;
+}
+
+.delivery{
+    font-size: 14px;
+    color: #000000;
+    font-weight: 700;
+    margin-left: 18px;
+}
+
+.delivery-input{
+    margin-left: 18px;
+    width: 800px;
+    height: 100px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.delivery-input::placeholder{
+    font-family: Helvetica Neue,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,sans-serif;
+}
+
+
+/* *************************************************************************************************************** */
+
+.lower{
+    background-color: #fff;
+    border-radius: 7px;
+    padding-bottom: 20px;
+}
+
+.quantity{
+    padding: 10px 20px;
+    background: #e6e6e6;
+    display: flex;
+    font-size: 14px;
+    color: #4a4a4a;
+    font-weight: 700;
+}
+
+.showcase{
+    padding: 15px 0 23px;
+    display: flex;
+}
+
+.name{
+    max-width: 193px;
+    margin-left: 10px;
+}
+.name a{
+    font-size: 15px;
+    color: #404553;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.counter{
+    margin-left: 120px;
+    border: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    max-width: 96px;
+    height: 28px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.15);
+}
+
+.minus:hover{
+    cursor: pointer;
+}
+
+.plus:hover{
+    cursor: pointer;
+}
+
+.pill{
+    width: 140px;
+    display: flex;
+    background-color: #fff;
+    
+}
+
+.minus{
+    width: 29px;
+    height: 31px;
+    border: none;
+    outline: none;
+    border-right: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    background-color: #fff;
+    color: #b9b9b9;
+}
+
+.digit{
+    height: 28px;
+    width: 39px;
+    border-right: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    padding-top: 2px;
+    text-align: center;
+
+}
+.plus{
+    width: 28px;
+    height: 31px;
+    background-color: #fff;
+    outline: none;
+    border: none;
+    border-right: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    color: #b9b9b9;
+}
+
+.worth{
+    margin-left: 20px;
+}
+.worth h1{
+    font-size: 20px;
+    color: #4a4a4a;
+}
+
+.worth p{
+    font-size: 13px;
+    color: #bbbbbb;
+}
+
+.links{
+    margin-left: 90px;
+    text-align: right;
+}
+.links button{
+    background: #fff;
+    outline: none;
+    border: none;
+    color: #9a0052;
+}
+
+
+/* ********************************************************************************************** */
+
+.voucher{
+    padding: 13px 15px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.voucher a{
+    color: #4a4a4a;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.options{
+    border-bottom: 1px solid #f2f2f2;
+    padding: 15px 20px;
+    font-weight: 600;
+}
+
+.feint-words{
+    padding: 30px 15px;
+    margin: 15px;
+    background: #fdfdfd;
+}
+
+.feint-words p{
+    color: #cccccc;
+    font-weight: 700;
+    font-size: 15px;
+    word-wrap: normal;
+    text-align: center;
+}
+
+.subtotal{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.subtotal:hover{
+    cursor: pointer;
+}
+
+
+.charges{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.charges:hover{
+    cursor: pointer;
+}
+
+.total{
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    border-bottom: 1px solid #f2f2f2;
+    color: #000000; 
+    font-weight: 700;
+}
+
+.total:hover{
+    cursor: pointer;
+}
+
+.exclude{
+    padding: 2px 15px;
+    text-align: end;
+    font-size: 11px;
+    color: #b87300;
+    font-weight: 400;
+}
+
+.continue{
+    padding: 15px;
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.continue button{
+    width: 100%;
+    height: 40px;
+    background: #ddd;
+    cursor: not-allowed;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.card{
+    padding: 10px 15px 5px;
+    font-size: 16px;
+    color: #4a4a4a; 
+    font-weight: 700;
+    display: flex;
+}
+
+.card span{
+    opacity: .4;
+}
+
+.icon-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon-flex img{
+    margin-left: 30px;
+}
+
+.padlock{
+    font-size: 11px;
+    padding: 0 15px;
+    color: #4a4a4a;
+    opacity: .4;
+}
