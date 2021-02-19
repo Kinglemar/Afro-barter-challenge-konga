@@ -9,15 +9,15 @@ function newBorder(){
     PINKRING.style.outline = "none"
 }
 
-function defaultBorder(){
-    PINKRING.style.border = "1px solid #ccc"
+function oldBorder(){
+    PINKRING.style.borderColor = "1px solid #cccccc"
     PINKRING.style.outline = "none"
 }
 
 
 
 PINKRING.addEventListener("focus", newBorder, false)
-PINKRING.addEventListener("focus-out", defaultBorder, false)
+PINKRING.addEventListener("focus-out", oldBorder, false)
 
 // ********************************************************************
 

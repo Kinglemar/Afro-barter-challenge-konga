@@ -105,10 +105,16 @@ header h1{
 
 .check input{
     margin-left: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: transparent;
 }
 
-.check input:focus{
-    background-color: #f84ca2;
+
+.check input:checked{
+    background: #f84ca2;
 }
 
 .delivery{
